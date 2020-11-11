@@ -11,7 +11,7 @@ terraform {
 ##############
 resource "redis-config" "my-redis-object-1" {
   key   = "k2"
-  value = "random value 1"
+  value = "random value 2"
 }
 ##############
 
