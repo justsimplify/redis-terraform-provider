@@ -22,7 +22,10 @@ $ make setup
   - port: `6379`
   - password: `<empty password>`
 - If the above config is different, change those values in `variables.tfvars` file before proceeding.
-- If not using `variables.tfvars`, we can also use the following env variables.
+- If not using `variables.tfvars`, we can also use the following env variables. (Then we will also need slight changes in Makefile to not include the `tfvars` file.)
   - host: `REDIS_HOST`
   - port: `REDIS_PORT`
   - password: `REDIS_PASSWORD`
+  
+#### Contributing Package
+- https://github.com/justsimplify/redis-client - (For redis API)
