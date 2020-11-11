@@ -13,3 +13,6 @@ apply:
 setup: cleanup init plan apply
 
 read_key: cleanup init apply
+
+refresh:
+	terraform refresh -var-file=variables.tfvars

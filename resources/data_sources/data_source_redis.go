@@ -34,7 +34,8 @@ func redisDataRead(ctx context.Context, d *schema.ResourceData, m interface{}) d
 	res, err := rc.Read(ctx, d.Get("key").(string))
 
 	if err != nil {
-		return diag.FromErr(err)
+		d.SetId("")
+		return diags
 	}
 
 	if err := d.Set("value", res); err != nil {
